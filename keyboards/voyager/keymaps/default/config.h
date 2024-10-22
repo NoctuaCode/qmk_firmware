@@ -3,8 +3,10 @@
   See config.h options at https://docs.qmk.fm/#/config_options?id=the-configh-file
 */
 
+#define PERMISSIVE_HOLD
+
 #undef TAPPING_TERM
-#define TAPPING_TERM 175
+#define TAPPING_TERM 200
 
 #define QUICK_TAP_TERM 0
 
@@ -27,6 +29,8 @@
 
 #define TAPPING_TERM_PER_KEY
 #define RGB_MATRIX_STARTUP_SPD 60
+
+#undef HOLD_ON_OTHER_KEY_PRESS
 
 #undef ENABLE_RGB_MATRIX_ALPHAS_MODS
 #undef ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
