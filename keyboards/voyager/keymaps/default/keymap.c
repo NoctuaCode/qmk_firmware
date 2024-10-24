@@ -10,11 +10,11 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_voyager(
-    KC_DLR,    KC_EXLM,               KC_LBRC,               KC_LCBR,               KC_LPRN,               KC_AMPR,                                        KC_PERC,    KC_RPRN,               KC_RCBR,               KC_RBRC,               KC_ASTR,               KC_BSLS,
-    KC_AT,     KC_SCLN,               KC_COMMA,              KC_DOT,                KC_P,                  KC_Y,                                           KC_F,       KC_G,                  KC_C,                  KC_R,                  KC_L,                  KC_SLASH,
-    KC_EQL,    MT(MOD_LGUI, KC_A),    MT(MOD_LALT, KC_O),    MT(MOD_LSFT, KC_E),    MT(MOD_LCTL, KC_U),    KC_I,                                           KC_D,       MT(MOD_RCTL, KC_H),    MT(MOD_RSFT, KC_T),    MT(MOD_LALT, KC_N),    MT(MOD_RGUI, KC_S),    KC_MINUS,
-    MO(1),     KC_QUOTE,              KC_Q,                  KC_J,                  KC_K,                  KC_X,                                           KC_B,       KC_M,                  KC_W,                  KC_V,                  KC_Z,                  KC_GRAVE,
-                                                                                    KC_BSPC,               LT(1,KC_ESCAPE),                                KC_ENTER,   KC_SPACE
+    KC_DLR,    KC_EXLM,               KC_LBRC,               KC_LCBR,               KC_LPRN,               KC_AMPR,                                        KC_PERC,                 KC_RPRN,               KC_RCBR,               KC_RBRC,               KC_ASTR,               KC_BSLS,
+    KC_AT,     KC_SCLN,               KC_COMMA,              KC_DOT,                KC_P,                  KC_Y,                                           KC_F,                    KC_G,                  KC_C,                  KC_R,                  KC_L,                  KC_SLASH,
+    KC_EQL,    KC_A,                  KC_O,                  KC_E,                  KC_U,                  KC_I,                                           KC_D,                    KC_H,                  KC_T,                  KC_N,                  KC_S,                  KC_MINUS,
+    MO(1),     KC_QUOTE,              KC_Q,                  KC_J,                  KC_K,                  KC_X,                                           KC_B,                    KC_M,                  KC_W,                  KC_V,                  KC_Z,                  KC_GRAVE,
+                                                                                    MT(KC_LCTL, KC_BSPC),  MT(KC_LGUI, KC_ESCAPE),                         MT(KC_LALT, KC_ENTER),   MT(KC_LSFT, KC_SPACE)
   ),
   [1] = LAYOUT_voyager(
     RGB_SPD,        RGB_SLD,        RGB_MODE_FORWARD,RGB_TOG,        TOGGLE_LAYER_COLOR,RGB_SPI,                                        KC_BRIGHTNESS_DOWN,KC_BRIGHTNESS_UP,KC_MEDIA_PREV_TRACK,KC_MEDIA_PLAY_PAUSE,KC_MEDIA_NEXT_TRACK,KC_PSCR,
